@@ -1,1 +1,1 @@
-# LetCode Easy Challenges
+# LeetCode Easy Challenges
