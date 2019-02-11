@@ -11,16 +11,12 @@ var longestCommonPrefix = function(strs) {
 	if( strs.length === 0 ) return '';
 	let word = 0;
 	let prefix = '';
-	var shortest = Math.min(...strs.map(({ length }) => length));
-	for(let letter = 0; letter < shortest; letter++) {
-		temp = strs[0][letter];
+	for(let letter = 0; letter < strs[0].length; letter++) {
 		while( undefined !== strs[++word] && strs[word][letter] === strs[0][letter] ) {
-			// console.log( {word}, {letter}, strs[word][letter] );
 		}
 		if( word >= strs.length ) {
 			prefix += strs[0][letter];
 			word = 0;
-			// console.log('adding: ', strs[0][letter], ' to ', {prefix});
 		}
 		else return prefix;
 	}
