@@ -22,11 +22,6 @@ var mergeTwoLists = function(l1, l2) {
   if( !l2 ) return l1;
 	let mergedList = new ListNode();
 
-	function ListNode(val) {
-		this.val = val;
-		this.next = null;
-	}
-
 	function addNode( list, val ) {
 		let currentNode = list;
 		if( list.val ) {
