@@ -18,9 +18,7 @@
 var mySqrt = function(x) {
 	if( x === 0) return 0;
 	let sqrt = x/2;
-	while( Math.floor(sqrt) != Math.floor(sqrt = sqrt - ((sqrt*sqrt)-x)/(2*sqrt) ) ) {
-		console.log({sqrt});
-	}
+	while( Math.floor(sqrt) != Math.floor(sqrt = sqrt - ((sqrt*sqrt)-x)/(2*sqrt) ) );
 	return Math.floor(sqrt);
 };
 
