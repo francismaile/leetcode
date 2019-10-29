@@ -73,3 +73,4 @@ function printLinkedList( list ) {
 }
 
 printLinkedList( mergeTwoLists( list1, list2 ) );
+
